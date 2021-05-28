@@ -3,7 +3,6 @@
  */
 import { useShortcut } from '@wordpress/keyboard-shortcuts';
 import { useDispatch } from '@wordpress/data';
-import { BlockEditorKeyboardShortcuts } from '@wordpress/block-editor';
 
 /**
  * Internal dependencies
@@ -31,12 +30,7 @@ function VisualEditorGlobalKeyboardShortcuts() {
 		{ bindGlobal: true }
 	);
 
-	return (
-		<>
-			<BlockEditorKeyboardShortcuts />
-			<SaveShortcut />
-		</>
-	);
+	return <SaveShortcut />;
 }
 
 export default VisualEditorGlobalKeyboardShortcuts;

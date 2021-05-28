@@ -4,7 +4,6 @@
 import {
 	BlockList,
 	BlockTools,
-	BlockEditorKeyboardShortcuts,
 	BlockSelectionClearer,
 	WritingFlow,
 	ObserveTyping,
@@ -25,7 +24,6 @@ export default function WidgetAreasBlockEditorContent( {
 			<Notices />
 			<BlockTools>
 				<KeyboardShortcuts />
-				<BlockEditorKeyboardShortcuts />
 				<div className="editor-styles-wrapper">
 					<EditorStyles styles={ blockEditorSettings.styles } />
 					<BlockSelectionClearer>
